@@ -25,8 +25,8 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: var(
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a { font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 300; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); text-decoration: none; cursor: pointer; transition: color 0.2s; background: none; border: none; padding: 0; }
 .nav-links a:hover { color: var(--ink); }
-.landing { padding: 0; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; }
-.landing-left { padding: 120px 48px 80px; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid var(--border); }
+.landing { padding: 0; min-height: 100vh; display: block; }
+.landing-left { padding: 120px 48px 80px; display: flex; flex-direction: column; justify-content: center;  }
 .landing-label { font-family: 'Jost', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 32px; }
 .landing h1 { font-family: 'Playfair Display', serif; font-size: clamp(64px, 9vw, 120px); font-weight: 900; line-height: 0.92; letter-spacing: -0.01em; margin-bottom: 48px; }
 .landing h1 em { font-style: italic; font-weight: 700; }
@@ -47,7 +47,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: var(
 .letter-to { font-family: 'Jost', sans-serif; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 36px; }
 .letter-wrap p { font-size: 16.5px; line-height: 1.9; color: #2A2520; margin-bottom: 20px; }
 .letter-sign { margin-top: 40px !important; font-family: 'Playfair Display', serif; font-style: italic; font-size: 26px; color: var(--ink); }
-.samples-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border); margin-bottom: 2px; }
+.samples-grid { display: block; gap: 2px; background: var(--border); margin-bottom: 2px; }
 .sample-card { background: var(--sky-light); padding: 44px 40px; display: flex; flex-direction: column; gap: 14px; }
 .sample-tag { font-family: 'Jost', sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
 .sample-card h3 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; line-height: 1.25; }
@@ -73,7 +73,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: var(
 .q-list { display: flex; flex-direction: column; gap: 52px; max-width: 740px; }
 .q-label { font-family: 'Jost', sans-serif; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
 .q-answer { font-size: 17px; line-height: 1.85; color: #2A2520; padding-left: 24px; border-left: 2px solid var(--ink); }
-.past-work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border); }
+.past-work-grid { display: block; gap: 2px; background: var(--border); }
 .pw-card { background: var(--sky-light); padding: 40px; display: flex; flex-direction: column; gap: 12px; }
 .pw-card img { width: 100%; border: 1px solid var(--border); margin-bottom: 8px; max-height: 320px; object-fit: cover; object-position: top; }
 .pw-tag { font-family: 'Jost', sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
@@ -129,9 +129,7 @@ footer p { font-family: 'Jost', sans-serif; font-size: 10px; color: var(--muted)
         </button>
       </div>
     </div>
-    <div class="landing-right">
-      
-    </div>
+    
   </div>
 </div>
 
